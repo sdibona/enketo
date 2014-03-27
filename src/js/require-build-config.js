@@ -7,7 +7,6 @@ require.config( {
     paths: {
         "core-lib": "../../../public/lib/enketo-core/lib",
         "require-config": "../require-build-config",
-
         "enketo-js": "../../../public/lib/enketo-core/src/js",
         "enketo-widget": "../../../public/lib/enketo-core/src/widget",
         "enketo-config": "../config.json", //should move elsewhere
@@ -22,6 +21,7 @@ require.config( {
         "file-saver": "../../../public/lib/file-saver/FileSaver",
         "Blob": "../../../public/lib/blob/Blob",
         "vkbeautify": "../../../public/lib/vkbeautify/vkbeautify",
+        "leaflet": "../../../public/lib/enketo-core/lib/leaflet/leaflet",
         "print": "../../../src/sass/grid/js/print-grid"
     },
     shim: {
@@ -51,6 +51,9 @@ require.config( {
         },
         "vkbeautify": {
             exports: "vkbeautify"
+        },
+        "leaflet": {
+            exports: "L"
         }
     }
 } );

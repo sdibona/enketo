@@ -19,6 +19,7 @@ require.config( {
         "file-saver": "../../lib/file-saver/FileSaver",
         "Blob": "../../lib/blob/Blob",
         "vkbeautify": "../../lib/vkbeautify/vkbeautify",
+        "leaflet": "../../lib/enketo-core/lib/leaflet/leaflet",
         "print": "print-grid"
     },
     shim: {
@@ -48,6 +49,9 @@ require.config( {
         },
         "vkbeautify": {
             exports: "vkbeautify"
+        },
+        "leaflet": {
+            exports: "L"
         }
     }
 } );
